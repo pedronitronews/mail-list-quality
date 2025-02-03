@@ -4,7 +4,6 @@
     "autoload": {
         "psr-4": {
             "PedroNN\\MailListQuality\\": "./MailListQuality/"
-            "PedroNN\\MailListQuality\\": "src/"
         }
     },
     "authors": [
