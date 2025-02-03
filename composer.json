@@ -1,0 +1,15 @@
+{
+    "name": "pedronn/mail-list-quality",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "PedroNN\\MailListQuality\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Library to check the quality of an email listn"
+        }
+    ],
+    "require": {}
+}
