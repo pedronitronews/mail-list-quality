@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Classes\Libs\MailListQuality\Patterns;
+namespace PedroNN\MailListQuality\Patterns;
 
-use App\Classes\Libs\MailListQuality\Traits\Check;
+use PedroNN\MailListQuality\Traits\Check;
 
 class SpamTraps
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\Libs\MailListQuality\Traits;
+namespace PedroNN\MailListQuality\Traits;
 
 trait Check
 {

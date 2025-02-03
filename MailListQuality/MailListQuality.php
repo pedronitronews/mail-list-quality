@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Classes\Libs\MailListQuality;
+namespace PedroNN\MailListQuality;
 
-use App\Classes\Libs\MailListQuality\Patterns\DisabledDomains;
-use App\Classes\Libs\MailListQuality\Patterns\IncorrectDomains;
-use App\Classes\Libs\MailListQuality\Patterns\RoleMails;
-use App\Classes\Libs\MailListQuality\Patterns\SpamTraps;
-use App\Classes\Libs\MailListQuality\Patterns\TempMails;
-use App\Classes\Libs\MailListQuality\Patterns\TLDs;
+use PedroNN\MailListQuality\Patterns\DisabledDomains;
+use PedroNN\MailListQuality\Patterns\IncorrectDomains;
+use PedroNN\MailListQuality\Patterns\RoleMails;
+use PedroNN\MailListQuality\Patterns\SpamTraps;
+use PedroNN\MailListQuality\Patterns\TempMails;
+use PedroNN\MailListQuality\Patterns\TLDs;
 
 class MailListQuality
 {
 
-    const PESSIMA = 1;
-    const RUIM = 2;
-    const RAZOAVEL = 3;
-    const BOA = 4;
-    const OTIMA = 5;
+    const TERRIBLE = 1;
+    const BAD = 2;
+    const REASONABLE = 3;
+    const GOOD = 4;
+    const GREAT = 5;
 
 
 
@@ -46,6 +46,7 @@ class MailListQuality
     }
 
     /**
+     * Exec the check on the mail list.
      * @param array $email_list
      * @return void
      */
@@ -142,6 +143,7 @@ class MailListQuality
     }
 
     /**
+     * Returns a score from 1 to 5
      * @return int|void
      */
     public function result()
@@ -156,27 +158,28 @@ class MailListQuality
         }
 
         if($resultado <= 0.15){
-            return self::OTIMA;
+            return self::GREAT;
         } else if ($resultado > 0.15 AND $resultado <= 0.30){
-            return self::BOA;
+            return self::GOOD;
         } else if ($resultado > 0.30 AND $resultado <= 0.40){
-            return self::RAZOAVEL;
+            return self::REASONABLE;
         } else if ($resultado > 0.40 AND $resultado <= 0.55){
-            return self::RUIM;
+            return self::BAD;
         } else if ($resultado > 0.55){
-            return self::PESSIMA;
+            return self::TERRIBLE;
         }
     }
 
     /**
+     * Returns a list with the number of matches for each check.
      * @return array
      */
-    public function getMatches(){
+    public function matches(){
         return $this->result['matches'];
     }
 
     /**
-     * Retorna o match mais comum na análise de lista.
+     * Returns the most common match in list check.
      * @return mixed
      */
     public function most_common(){
@@ -190,7 +193,7 @@ class MailListQuality
         //pega somente a chave do array.
         $somente_chave = array_keys($array_ordenado);
 
-        return array_first($somente_chave);
+        return reset($somente_chave);
     }
 
 
