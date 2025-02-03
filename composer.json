@@ -11,5 +11,7 @@
             "name": "Library to check the quality of an email listn"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=5.5"
+    }
 }
