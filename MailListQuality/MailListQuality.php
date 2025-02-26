@@ -65,7 +65,7 @@ class MailListQuality
 
             //Verifica sintaxe do email.
             if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-                if($this->debug) var_dump($email." - Invalid Syntax");
+                if($this->debug) var_dump($email." - %%Invalid Syntax");
 
                 $this->result['points'] += 1;
                 $this->result['matches']['invalid_syntax']++;
@@ -76,7 +76,7 @@ class MailListQuality
             $spamtrap = new SpamTraps();
             if($spamtrap->check($email)){
 
-                if($this->debug) var_dump($email." - Spamtrap");
+                if($this->debug) var_dump($email." - %%Spamtrap");
 
                 $this->result['points'] += $spamtrap->points();
                 $this->result['matches']['spamtrap']++;
@@ -87,7 +87,7 @@ class MailListQuality
             $incorrect_domains = new IncorrectDomains();
             if($incorrect_domains->check($email)){
 
-                if($this->debug) var_dump($email." - Incorrect Domain");
+                if($this->debug) var_dump($email." - %%Incorrect Domain");
 
                 $this->result['points'] += $incorrect_domains->points();
                 $this->result['matches']['incorrect_domain']++;
@@ -98,7 +98,7 @@ class MailListQuality
             $disabled_domains = new DisabledDomains();
             if($disabled_domains->check($email)){
 
-                if($this->debug) var_dump($email." - Disabled Domain");
+                if($this->debug) var_dump($email." - %%Disabled Domain");
 
                 $this->result['points'] += $disabled_domains->points();
                 $this->result['matches']['disabled_domain']++;
@@ -109,7 +109,7 @@ class MailListQuality
             $tempmails = new TempMails();
             if($tempmails->check($email)){
 
-                if($this->debug) var_dump($email." - TempMail");
+                if($this->debug) var_dump($email." - %%TempMail");
 
                 $this->result['points'] += $tempmails->points();
                 $this->result['matches']['tempmail']++;
@@ -120,7 +120,7 @@ class MailListQuality
             $rolemails = new RoleMails();
             if($rolemails->check($email)){
 
-                if($this->debug) var_dump($email." - RoleMail");
+                if($this->debug) var_dump($email." - %%RoleMail");
 
                 $this->result['points'] += $rolemails->points();
                 $this->result['matches']['rolemail']++;
@@ -131,13 +131,14 @@ class MailListQuality
             $tlds = new TLDs();
             if($tlds->check($email)){
 
-                if($this->debug) var_dump($email." - TLDs");
+                if($this->debug) var_dump($email." - %%TLDs");
 
                 $this->result['points'] += $tlds->points();
                 $this->result['matches']['tlds']++;
                 continue;
             }
 
+            if($this->debug) var_dump($email." - Email Válido");
         }
 
     }

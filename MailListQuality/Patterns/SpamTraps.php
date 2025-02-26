@@ -10,7 +10,7 @@ class SpamTraps
 
     const POINTS = 15;
 
-    const REGEX = [
+    public $regex = [
         /**
          * Todos os emails que tenham até 9 dígitos sequenciais de números na frente, exemplo "000@gmail.com".
          * @lang RegExp
@@ -91,7 +91,7 @@ class SpamTraps
         '/^.*@(.)\1{1,3}\.(com|net|org|com.br)$/',
     ];
 
-    const EMAILS = [
+    public $emails = [
         //Emails trap
         'asda@bol.com.br',
         'asda@gmail.com',
