@@ -186,7 +186,6 @@ class IncorrectDomains
         'fmaiil' => true,
         'fmaill' => true,
         'jmail' => true,
-        'ymail' => true,
         'nmail' => true,
         'hnail' => true,
         'hjail' => true,
