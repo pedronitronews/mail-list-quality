@@ -10,6 +10,7 @@ class TempMails {
     const POINTS = 4;
 
     public $full_domains = [
+        "@m.expediapartnercentral.com"            => true,
         "@0-mail.com"                             => true,
         "@passmail.net"                           => true,
         "@tuamaeaquelaursa.com"                   => true,
@@ -3160,6 +3161,8 @@ class TempMails {
         "@trashmail.com"                          => true,
         "@trashmail.de"                           => true,
         "@trashmail.gq"                           => true,
+        "@trashmail.fr"                           => true,
+        "@trashmail.se"                           => true,
         "@trashmail.io"                           => true,
         "@trashmail.me"                           => true,
         "@trashmail.net"                          => true,

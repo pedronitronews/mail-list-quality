@@ -21,6 +21,7 @@ class IncorrectDomains {
         '@outlook.co'          => true,
         '@yahoo.co'            => true,
         '@yahoo.co.br'         => true,
+        '@yahoo.com.nr'        => true,
         '@gmail.gmail.com'     => true,
         '@icloud.com.gmail'    => true,
         '@marketing.gmail.com' => true,
@@ -5245,6 +5246,8 @@ class IncorrectDomains {
         'icloudc'                  => true,
         'iclodud'                  => true,
         'iclouddd'                 => true,
+        'gmais'                    => true,
+        'outloock'                 => true,
     ];
 
     public $domains = [
