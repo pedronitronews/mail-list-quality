@@ -4,17 +4,27 @@ namespace PedroNN\MailListQuality\Patterns;
 
 use PedroNN\MailListQuality\Traits\Check;
 
-class DisabledDomains
-{
+class DisabledDomains {
     use Check;
 
     const POINTS = 5;
 
     public $full_domains = [
         '@brturbo.com.br'   => true,
+        '@brturbo.com'      => true,
+        '@xp-server.net'    => true,
+        '@superig.com.br'   => true,
+        '@yahoo.com.cn'     => true,
+        '@zipmail.com'      => true,
         '@oi.com.br'        => true,
         '@globo.com'        => true,
+        '@gmil.com'         => true,
+        '@yandex.com.ua'    => true,
         '@globomail.com'    => true,
+        '@globomail.com.br' => true,
+        '@netsite.com.br'   => true,
+        '@xsnqcs.com'       => true,
+        '@globo.com.br'     => true,
         '@altomail.com'     => true,
         '@facebook.com'     => true,
         '@instagram.com'    => true,
