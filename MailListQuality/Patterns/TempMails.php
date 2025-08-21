@@ -12,7 +12,9 @@ class TempMails {
     public $full_domains = [
         "@0-mail.com"                             => true,
         "@passmail.net"                           => true,
+        "@tuamaeaquelaursa.com"                   => true,
         "@027168.com"                             => true,
+        "@mozmail.com"                            => true,
         "@0815.ru"                                => true,
         "@0815.ry"                                => true,
         "@0815.su"                                => true,
