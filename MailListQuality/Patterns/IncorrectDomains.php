@@ -20,6 +20,7 @@ class IncorrectDomains {
         '@hotmail.br'          => true,
         '@outlook.co'          => true,
         '@yahoo.co'            => true,
+        '@yahoo.co.br'         => true,
         '@gmail.gmail.com'     => true,
         '@icloud.com.gmail'    => true,
         '@marketing.gmail.com' => true,
@@ -29,6 +30,12 @@ class IncorrectDomains {
         '@xn--hotmai-1ua.com'  => true,
         '@gomes.emaill.com'    => true,
         '@ibest.com.be'        => true,
+        '@hotmail.comail.com'  => true,
+        '@hotmail.comail.com'  => true,
+        '@ymail.co'            => true,
+        '@yahoo.co.br'         => true,
+        '@live.om'             => true,
+        '@yahoo.com.bt'        => true,
     ];
 
     public $name_domains = [
@@ -193,7 +200,6 @@ class IncorrectDomains {
         'gaill'                    => true,
         'glmail'                   => true,
         'gma'                      => true,
-        'gmail'                    => true,
         'fmil'                     => true,
         'hmil'                     => true,
         'tmil'                     => true,

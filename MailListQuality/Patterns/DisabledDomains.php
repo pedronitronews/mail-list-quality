@@ -15,6 +15,7 @@ class DisabledDomains {
         '@xp-server.net'    => true,
         '@superig.com.br'   => true,
         '@yahoo.com.cn'     => true,
+        '@yahoo.com.bt'     => true,
         '@zipmail.com'      => true,
         '@oi.com.br'        => true,
         '@globo.com'        => true,
