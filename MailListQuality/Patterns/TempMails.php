@@ -11,6 +11,7 @@ class TempMails {
 
     public $full_domains = [
         "@m.expediapartnercentral.com"            => true,
+        "@www.bilheteriaexpress.com.br"           => true,
         "@0-mail.com"                             => true,
         "@passmail.net"                           => true,
         "@tuamaeaquelaursa.com"                   => true,
