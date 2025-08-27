@@ -37,6 +37,15 @@ class IncorrectDomains {
         '@yahoo.co.br'         => true,
         '@live.om'             => true,
         '@yahoo.com.bt'        => true,
+        '@bol.vom.br'          => true,
+        '@bol.com.com.br'      => true,
+        '@bol.bom.br'          => true,
+        '@bol.co.br'           => true,
+        '@bol.com.be'          => true,
+        '@bol.combr'           => true,
+        '@bol.om.br'           => true,
+        '@bolmail.com'         => true,
+        '@bol.cm.br'           => true,
     ];
 
     public $name_domains = [
@@ -105,7 +114,6 @@ class IncorrectDomains {
         '127uol'                   => true,
         'clobo'                    => true,
         'com'                      => true,
-        'bol'                      => true,
         'gmailc'                   => true,
         'hotmasi'                  => true,
         'gmlmail'                  => true,
