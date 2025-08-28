@@ -55,7 +55,6 @@ class IncorrectDomains {
         'hotimil'                  => true,
         'yhool'                    => true,
         'yahoom'                   => true,
-        'hotlink'                  => true,
         'lwmail'                   => true,
         'gmail2020'                => true,
         'hotmailcom'               => true,
