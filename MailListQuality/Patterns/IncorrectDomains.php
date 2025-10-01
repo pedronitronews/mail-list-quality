@@ -1619,6 +1619,7 @@ class IncorrectDomains {
         'hotamol'                  => true,
         'hotmoal'                  => true,
         'hotmalo'                  => true,
+        'hotlook '                 => true,
         'hhotmaol'                 => true,
         'hootmaol'                 => true,
         'hottmaol'                 => true,
