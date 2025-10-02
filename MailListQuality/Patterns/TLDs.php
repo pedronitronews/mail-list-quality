@@ -21,7 +21,6 @@ class TLDs {
         '/\.com\.com\.br/i', //.com.com.br
         '/\.cok\.br/i', //cok.br,
         '/\.cm$/i', //.cm
-        '/\.ipiranga$/i', //.ipiranga
         '/\.ccom/i', //ccom
     ];
 
