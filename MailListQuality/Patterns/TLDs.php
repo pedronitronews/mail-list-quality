@@ -21,7 +21,8 @@ class TLDs {
         '/\.com\.com\.br/i', //.com.com.br
         '/\.cok\.br/i', //cok.br,
         '/\.cm$/i', //.cm
-        '/\.ccom/i', //ccom
+        '/\.ccom/i', //ccom,
+        '/^[^.]+$/', // sem tld
     ];
 
     public $tlds = [
