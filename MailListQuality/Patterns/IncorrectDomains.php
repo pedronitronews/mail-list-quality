@@ -17,8 +17,10 @@ class IncorrectDomains {
     public $full_domains = [
         '@gmail.com.br'        => true,
         '@gmail.co'            => true,
+        '@gmail.om'            => true,
         '@hotmail.br'          => true,
         '@agmail.com'          => true,
+        '@outluc.com'          => true,
         '@outlook.co'          => true,
         '@yahoo.co'            => true,
         '@yahoo.co.br'         => true,
