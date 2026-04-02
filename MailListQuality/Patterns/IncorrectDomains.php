@@ -15,9 +15,13 @@ class IncorrectDomains {
     ];
 
     public $full_domains = [
+        '@hotmail.coml.com'    => true,
         '@gmail.com.br'        => true,
+        '@gemial.com'          => true,
         '@gmail.co'            => true,
+        '@icloud.pt'           => true,
         '@gmail.om'            => true,
+        '@wgmail.com'          => true,
         '@hotmail.br'          => true,
         '@agmail.com'          => true,
         '@outluc.com'          => true,
@@ -5257,6 +5261,7 @@ class IncorrectDomains {
         'iclouddd'                 => true,
         'gmais'                    => true,
         'outloock'                 => true,
+        'uil'                      => true,
     ];
 
     public $domains = [
